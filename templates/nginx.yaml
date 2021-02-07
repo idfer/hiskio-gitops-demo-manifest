@@ -29,8 +29,11 @@ spec:
           value: {{ .Values.nginx.prefix }}
         volumeMounts:
         - name: index-html
-          mountPath: /var/www/html/test/
+          mountPath: /var/www/html/gitops/
       volumes:
       - name: index-html
         configMap:
           name: {{.Chart.Name }}
+        items:
+          - key: index
+            path: index.html

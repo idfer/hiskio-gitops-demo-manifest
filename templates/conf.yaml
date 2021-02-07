@@ -3,5 +3,11 @@ kind: ConfigMap
 metadata:
   name: {{.Chart.Name }}
 data:
-  index.html: |
-    cousre-testing file from ConfigMap
+  index: |
+     <HTML>
+     <HEAD>
+     <TITLE>Your Title Here</TITLE>
+     </HEAD>
+     <BR> <B><I>This is a new sentence without a paragraph break, in bold italics.</I></B>
+     </BODY>
+     </HTML>

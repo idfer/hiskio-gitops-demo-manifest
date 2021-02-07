@@ -8,4 +8,4 @@ nginx:
     repo: hwchiu/hiskio-gitops
     tag: latest
   pullPolicy: Always
-  prefix: test
+  prefix: prod
