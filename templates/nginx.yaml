@@ -34,6 +34,6 @@ spec:
       - name: index-html
         configMap:
           name: {{.Chart.Name }}
-        items:
-        - key: index
-          path: index.html
+          items:
+          - key: index
+            path: index.html
