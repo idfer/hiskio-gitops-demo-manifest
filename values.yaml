@@ -9,3 +9,4 @@ nginx:
     tag: latest
   pullPolicy: Always
   prefix: test
+hook: false
