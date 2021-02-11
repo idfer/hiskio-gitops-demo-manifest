@@ -8,5 +8,5 @@ nginx:
     repo: hwchiu/hiskio-gitops
     tag: d61d2bf
   pullPolicy: Always
-  prefix: prod
+  prefix: gitops-prod
 hook: false
