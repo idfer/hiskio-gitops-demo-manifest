@@ -22,7 +22,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ .Chart.Name }}-postHook
+  name: {{ .Chart.Name }}-posthook
   annotations:
     argocd.argoproj.io/hook: PostSync
     argocd.argoproj.io/hook-delete-policy: HookSucceeded
