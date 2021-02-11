@@ -3,7 +3,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ .Chart.Name }}-prehook
+  name: {{ .Release.Name }}-prehook
   annotations:
     argocd.argoproj.io/hook: PreSync
    #    argocd.argoproj.io/hook-delete-policy: HookSucceeded
@@ -22,7 +22,7 @@ spec:
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ .Chart.Name }}-posthook
+  name: {{ .Release.Name }}-posthook
   annotations:
     argocd.argoproj.io/hook: PostSync
    #    argocd.argoproj.io/hook-delete-policy: HookSucceeded

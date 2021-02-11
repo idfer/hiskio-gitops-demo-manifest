@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{.Chart.Name }}
+  name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.nginx.replicaCount }}
   selector:
@@ -33,7 +33,7 @@ spec:
       volumes:
       - name: index-html
         configMap:
-          name: {{.Chart.Name }}
+          name: {{ .Release.Name }}
           items:
           - key: index
             path: index.html
