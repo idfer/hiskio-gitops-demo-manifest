@@ -6,7 +6,7 @@ nginx:
   replicaCount: 1
   image:
     repo: idfer/hiskio-gitops
-    tag: 36e5eb1
+    tag: 73853ba
   pullPolicy: Always
   prefix: stage
 hook: false
