@@ -5,7 +5,7 @@
 nginx:
   replicaCount: 1
   image:
-    repo: hwchiu/hiskio-gitops
+    repo: idfer/hiskio-gitops
     tag: 36e5eb1
   pullPolicy: Always
   prefix: test
