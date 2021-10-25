@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 nginx:
-  replicaCount: 2
+  replicaCount: 3
   image:
     repo: idfer/hiskio-gitops
     tag: 73853ba
